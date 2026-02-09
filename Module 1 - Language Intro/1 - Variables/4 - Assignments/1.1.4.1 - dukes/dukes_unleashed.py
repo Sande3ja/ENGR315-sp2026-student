@@ -13,7 +13,13 @@ Note: this problem does not require the "compounding interest" formula from the 
 """
 
 ### Your code here ###
+#Problem is asking how much will have to be gifted and kept in investments so that the annaul return of 5% is enough to cover a year's tuition
+IN = 30792         #Dollar amount of in-state tuition
+OUT= 47882         #Dollar amount of out-of-state tuition
+R = 5/100          #Yearly return 
 
-in_state_gift = 0
+in_state_gift = IN/R
+print(in_state_gift)
 
-out_state_gift = 0
+out_state_gift = OUT/R
+print(out_state_gift)

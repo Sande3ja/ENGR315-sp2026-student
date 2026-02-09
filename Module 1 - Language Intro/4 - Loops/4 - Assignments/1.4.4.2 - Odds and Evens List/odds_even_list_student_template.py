@@ -26,11 +26,16 @@ nums = generate_random_int_list(max_length, upper_bound)
 # do not modify their names
 evens_list = []
 odds_list = []
+print(nums) #prints out the generated list so I can check the validity of my code
 
 """
 Step 1: Write a FOR loop to iterate through the list nums
 """
-
+for n in nums:                 # creating a for loop to iterate through every number in the list
+    if n%2==0:                 # checks each number in iteration if it is evenly divisble by two to decide if it is even
+        evens_list.append(n)   #if the number in iteration is even it adds it to the end of the evens list
+    else:                      #if the number fails the evens test
+        odds_list.append(n)    #adds the odd number to the end of the odds list
 
 """
 Step 2: Inside the FOR loop, examine the contents of nums. If the

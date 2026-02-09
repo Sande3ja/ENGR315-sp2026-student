@@ -29,3 +29,13 @@ num_evens = 0
 num_odds = 0
 
 ### YOUR CODE BEGINS HERE ###
+print(len(nums))
+for w in nums:
+    if w%2==0:
+        num_evens+=1
+    else:
+        num_odds+=1
+
+
+print(f"The number of even numbers is: ", num_evens)
+print(f"The number of odd numbers is: ", num_odds)

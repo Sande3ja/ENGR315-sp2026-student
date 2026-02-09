@@ -13,13 +13,16 @@ n = 10  # number of years to compound deposit
 
 
 # Step One: Divide Rate by 100
-step_one = None
+step_one = rate/100
+print(step_one)
 
 # Step Two: Add One to the step_one, then raise it the nth power
-step_two = None
+step_two = (1+step_one)**n
+print(step_two)
 
 # Step Three: Multiply the step_two by the Principal
-step_three = None
+step_three = principal*(step_two)
+print(step_three)
 
 # step_three should be around 1105, use a print statement to check:
 
@@ -34,6 +37,7 @@ N = 6     # n - exponent
 K = 2500  # Principal
 
 # write the equation here, using the variable names above:
-growth = None
+growth = K*(1+R/100)**N
+print(growth)
 
 # Use a print statement to check your work, growth should be around 60,343:

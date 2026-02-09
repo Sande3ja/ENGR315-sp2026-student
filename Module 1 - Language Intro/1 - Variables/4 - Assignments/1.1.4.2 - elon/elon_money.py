@@ -13,10 +13,20 @@ Note that Elon's capital will be $33B.
 """
 
 ### all your code below ###
+P = 33000000000 #Principal is the same for both options
 
+# Establishing variables for 10 year option
+r = 3.96/100      #interest rate for the 10-year option
+n = 10            #period of 10 years
+
+#Establishing the variables for 20 year option
+R = 4.32/100      # interest rate for the 20-year option
+N = 20            # period of 20 years
 
 # final answer for 10-year
-ten_year_final = None
+ten_year_final = P*((1+r)**n)
+print(ten_year_final)
 
 # final answer for 20-year
-twenty_year_final = None
+twenty_year_final = P*((1+R)**N)
+print(twenty_year_final)
