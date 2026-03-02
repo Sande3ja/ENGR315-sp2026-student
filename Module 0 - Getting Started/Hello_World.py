@@ -11,4 +11,13 @@ print("Hello, World!")
 # After your first run, try it out for yourself!
 
 # YOUR CODE HERE #
-print("Hello, World!")
+
+
+#Salary calculator
+
+increase=8.5/100
+salary=95000
+for i in range(10):
+    print(f"Salary for year ",i, "is $",salary)
+    salary+=increase*salary
+    
